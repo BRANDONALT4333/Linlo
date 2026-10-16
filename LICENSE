@@ -9,37 +9,253 @@ Email: brandonlavine59@gmail.com
 
 ============================================================
 
-EWSW 2.0 — LICENSE SUMMARY
-
-This project is released under the Eclipses Wonder of Software and
-Work License 2.0 (EWSW-2.0).
-
-You are free to use, copy, study, modify, adapt, publish, share,
-distribute, and sell this work, including for commercial purposes,
-without payment, mandatory attribution, or an obligation to publish
-or contribute your changes back.
-
-You may create proprietary or open-source derivatives, keep your
-modifications private, relicense your own contributions, port the
-work to other platforms, and redistribute it through any medium,
-subject to applicable law and third-party rights.
-
-Where legally possible, this work is dedicated to the public domain.
-Where that dedication is not legally effective, the rights holder
-grants the broadest applicable irrevocable, worldwide, royalty-free
-license permitted by law.
-
-No royalties, donations, support, maintenance, or future work are
-owed to the creator. Contributions, donations, and rewards are
-voluntary.
-
-This summary is provided for convenience and does not replace the
-complete EWSW-2.0 license. The complete license text is available at:
-
-https://docs.google.com/document/d/1bUab1YLuzB_r3O1kXMcrynpjyL6lATasb4vYSSQ59Vo/edit?usp=sharing
-
+ECLIPSES WONDER OF SOFTWARE AND WORK LICENSE 2.0
+Copyright © 2026, EclipseGMD (MonroeKernelWorks)
+This work is released under the Eclipses Wonder of Software and Work License 2.0 ("EWSW-2.0").
+PREAMBLE
+The Eclipses Wonder of Software and Work ("EWSW") is founded upon the following principles:
+People Over Profits
+Love and Dedication Over Profit-Driven Work
+Rejection of Reward
+Doing It for Free and Voluntary
+Freedom Over Restriction
+Preservation Over Abandonment
+Access Without Obligation
+EWSW-2.0 exists to grant recipients the greatest practical freedom legally possible over the work to which it applies.
+The creator intends to relinquish as many rights as legally possible, dedicate the work to the public domain to the fullest extent permitted by law, and provide an irrevocable fallback license for any rights that cannot be relinquished.
+EWSW-2.0 does not require recipients to adopt the creator's philosophy, contribute anything in return, release modifications, recognize the creator, or distribute their own work under this license.
+The creator gives the work because they choose to give it.
+The recipient owes nothing in return.
+1. DEFINITIONS
+For the purposes of EWSW-2.0:
+1.1. "Work" means the software, source code, object code, documentation, artwork, designs, written material, hardware designs, creative material, or other subject matter that the creator expressly releases under EWSW-2.0.
+1.2. "Creator" means the person or entity releasing the Work under this license.
+1.3. "Recipient" means any person or entity that receives, accesses, uses, copies, modifies, or otherwise obtains the Work.
+1.4. "Derivative Work" means a work based upon or incorporating the Work, to the extent that applicable law recognizes such a category.
+1.5. "Contribution" means an original addition, modification, or other material voluntarily supplied by a contributor for inclusion in the Work.
+1.6. "Applicable Rights" means copyright, neighboring rights, database rights, patent rights, and other intellectual property rights that the Creator owns or is legally authorized to license or relinquish, as applicable.
+2. PUBLIC-DOMAIN DEDICATION
+2.1. Dedication.
+To the fullest extent legally possible, the Creator hereby dedicates the Work to the public domain and relinquishes all Applicable Rights that the Creator may lawfully relinquish.
+The Creator intends this dedication to be worldwide, perpetual, irrevocable, and effective without payment, attribution, registration, or any other condition.
+2.2. Fallback License.
+Where any right cannot legally be relinquished, waived, or dedicated to the public domain, the Creator grants every Recipient an irrevocable, worldwide, perpetual, royalty-free, non-exclusive, transferable, sublicensable, and unrestricted license to exercise that right to the maximum extent legally possible.
+This fallback license includes all permissions necessary to accomplish the purposes of EWSW-2.0.
+2.3. No Additional Permission Required.
+Recipients do not need to contact the Creator, request authorization, register their use, obtain written consent, or pay a fee to exercise rights granted under this license.
+2.4. Rights Not Owned by the Creator.
+Nothing in this section purports to dedicate or license rights belonging to another person or entity without authorization.
+3. GRANT OF FREEDOMS
+To the fullest extent permitted by applicable law, every Recipient may, without restriction under this license:
+a. use the Work for any purpose;
+b. study, inspect, and analyze the Work;
+c. copy, reproduce, and duplicate the Work;
+d. modify, adapt, translate, and transform the Work;
+e. create Derivative Works;
+f. combine the Work with other works, software, systems, or materials;
+g. publish, distribute, transmit, and redistribute the Work;
+h. publicly display, perform, or communicate the Work where applicable;
+i. sell the Work, copies, Derivative Works, and products or services involving the Work;
+j. sublicense, relicense, or otherwise convey rights in the Work to the extent permitted by the public-domain dedication or fallback license;
+k. permit other persons to exercise any of these freedoms;
+l. extract and reuse individual components of the Work;
+m. port, reimplement, or adapt the Work for other platforms and environments;
+n. create competing, compatible, independent, or alternative implementations;
+o. incorporate the Work into proprietary, commercial, non-commercial, public-domain, permissively licensed, or copyleft projects;
+p. redistribute the Work through any lawful medium, platform, network, repository, or distribution channel; and
+q. exercise any other freedom that applicable law permits the Creator to relinquish or license.
+These freedoms apply to both commercial and non-commercial activities.
+No payment, royalty, donation, attribution, publicity, registration, subscription, or other consideration is required.
+4. OWNERSHIP AND INDEPENDENCE
+4.1. Recipient Independence.
+Recipients may treat their copies as their own property to the extent permitted by applicable law.
+They may modify, rename, rebrand, incorporate, redistribute, sell, give away, archive, or discontinue their copies without seeking permission from the Creator.
+4.2. No Continuing Claim.
+The Creator retains no claim to payment, royalties, profits, or compensation merely because a Recipient uses, modifies, distributes, or derives value from the Work.
+4.3. Independent Projects.
+Recipients may create independent projects based upon the Work, including projects that compete with the Creator's projects or contradict the Creator's preferences.
+4.4. No Ownership of Another Person's Contributions.
+Nothing in this license transfers ownership of a Recipient's independently created material to the Creator.
+Rights in original contributions remain with their respective owners, subject to any permissions separately granted.
+5. NO OBLIGATION OF REWARD
+5.1. No Required Compensation.
+The Creator does not require money, royalties, donations, advertising, praise, publicity, recognition, reciprocal assistance, or any other reward as a condition of exercising the freedoms granted by EWSW-2.0.
+5.2. Voluntary Rewards.
+Recipients may voluntarily compensate, thank, assist, or support the Creator if they independently choose to do so.
+Such actions are entirely optional.
+5.3. No Debt or Obligation.
+Receiving, using, copying, modifying, distributing, or benefiting from the Work does not create a debt or obligation to the Creator.
+5.4. No Implied Contract for Future Work.
+The release of one Work does not obligate the Creator to produce another Work, accept a request, fulfill a promise of future development, or provide services.
+6. COMMERCIAL AND PROPRIETARY USE
+6.1. Commercial Freedom.
+Commercial use is expressly permitted.
+Recipients may sell the Work, charge for copies, bundle it with paid products, offer paid services involving it, or otherwise earn revenue from it.
+6.2. Proprietary Derivatives.
+Recipients may incorporate the Work into proprietary software, closed-source products, paid services, commercial hardware, or other works distributed under different terms.
+No provision of EWSW-2.0 requires a Recipient to disclose source code or publish modifications.
+6.3. No Mandatory Revenue Sharing.
+No Recipient is required to share revenue, profits, donations, or other proceeds with the Creator.
+6.4. No Philosophical Enforcement.
+The Creator's preference for people over profits does not prohibit Recipients from making money.
+The philosophy of EWSW is an expression of the Creator's values, not a condition imposed upon Recipients.
+7. ATTRIBUTION, NOTICES, AND REBRANDING
+7.1. No Attribution Requirement.
+Attribution to the Creator is not a condition of the rights granted under EWSW-2.0.
+7.2. Removal of Notices.
+Recipients may remove, replace, or omit references to the Creator, copyright notices, project names, and EWSW branding from their copies and Derivative Works, to the extent legally permitted.
+7.3. Rebranding.
+Recipients may rename, rebrand, and independently present modified versions of the Work.
+7.4. No False Endorsement.
+Nothing in this license grants a right to falsely claim that the Creator personally endorses, sponsors, certifies, or authored modifications that the Creator did not make.
+This provision does not create an attribution obligation or prohibit truthful descriptions of a work's history.
+7.5. Third-Party Rights.
+This license does not grant ownership or unrestricted use of third-party trademarks, names, likenesses, or other rights that the Creator does not control.
+8. MODIFICATIONS AND DOWNSTREAM LICENSING
+8.1. Modification Freedom.
+Recipients may modify the Work in any manner and for any purpose.
+8.2. Private Modifications.
+Recipients are not required to publish, disclose, submit, or distribute modifications.
+8.3. Choice of Terms.
+Recipients may distribute their own modifications and original contributions under any terms they choose, including proprietary terms or a different open-source or public-domain license.
+8.4. No Mandatory Share-Alike.
+EWSW-2.0 does not require Derivative Works to be distributed under EWSW-2.0 or any other particular license.
+8.5. No Mandatory Source Disclosure.
+Recipients are not required by this license to provide source code, build scripts, design files, installation instructions, or modification records.
+8.6. Existing Rights Remain Intact.
+A Recipient may not revoke, retroactively restrict, or invalidate rights already granted to another person under EWSW-2.0.
+Changing the license of a modified version does not cancel rights that other Recipients have already received in the original Work.
+8.7. No Requirement to Preserve License Text.
+To the extent permitted by applicable law, Recipients are not required to preserve this license's text, notices, or identifiers in copies or Derivative Works.
+This provision does not purport to terminate or narrow any rights already granted.
+9. PATENT FREEDOM
+9.1. Patent Grant.
+To the extent the Creator owns or controls patents that the Creator has the legal authority to license, the Creator grants each Recipient a worldwide, perpetual, irrevocable, royalty-free, non-exclusive license under those patents to make, have made, use, sell, offer for sale, import, modify, and distribute the Work and implementations of the Work.
+9.2. Scope.
+The patent grant applies only to patent claims that the Creator is authorized to license and that are necessarily infringed by the Work as released by the Creator or by the Creator's authorized Contributions, considered separately from independent modifications made by others.
+9.3. No Patent Royalty.
+The Creator shall not require patent royalties for activities authorized by this section.
+9.4. No Unowned Patent Rights.
+The Creator does not represent that the Work is free of third-party patents or that the Creator has authority to grant rights in patents owned by others.
+9.5. No Implied Patent Warranty.
+This section grants only the patent permissions expressly described above and does not guarantee that any implementation is free from infringement claims.
+10. SOFTWARE, HARDWARE, AND INTEROPERABILITY FREEDOM
+10.1. Software Freedom.
+Recipients may port the Work, replace its components, modify its dependencies, create compatible implementations, remove vendor restrictions, and adapt it to alternative operating systems, architectures, devices, and environments.
+10.2. Hardware Freedom.
+Where the Work contains or describes hardware designs, circuit designs, schematics, firmware, manufacturing instructions, or other technical designs, Recipients may reproduce, modify, manufacture, distribute, and sell implementations of those designs to the extent permitted by the applicable rights granted under this license.
+10.3. Reverse Engineering.
+This license does not prohibit reverse engineering, decompilation, disassembly, or interoperability analysis where the Recipient has the necessary rights and applicable law permits those activities.
+10.4. Independent Implementations.
+Recipients may independently reimplement interfaces, protocols, formats, and functionality described by the Work, subject to third-party rights and applicable law.
+10.5. No Mandatory Platform.
+No Recipient is required by this license to use a particular operating system, vendor, service, development environment, hardware platform, or distribution channel.
+10.6. No Guarantee of Technical Feasibility.
+This section grants legal permissions within the Creator's control. It does not guarantee that source code, manufacturing information, keys, tools, or other materials needed for a particular implementation are available.
+11. FORMAT, DISTRIBUTION, AND PRESERVATION FREEDOM
+11.1. Format Freedom.
+Recipients may convert the Work into other file formats, programming languages, encodings, representations, or technical standards.
+11.2. Distribution Freedom.
+Recipients may distribute the Work online, offline, through physical media, through software repositories, through mirrors, or through other lawful distribution methods.
+11.3. Archival Freedom.
+Recipients may preserve, archive, mirror, back up, and restore the Work, including through independent archival services and preservation projects.
+11.4. No Official Repository Requirement.
+Recipients are not required to obtain the Work from an official website, repository, server, or account controlled by the Creator.
+11.5. No Registration Requirement.
+No registration, account, access token, subscription, or communication with the Creator is required by this license to exercise the rights granted.
+11.6. Independence from the Creator.
+Recipients may continue using, maintaining, distributing, or developing the Work if the Creator abandons the project, stops providing updates, deletes the original repository, or becomes unavailable.
+11.7. No Guarantee of Availability.
+The Creator is not required to maintain any particular download, server, repository, or distribution channel.
+12. CONTRIBUTIONS AND VOLUNTARY LABOR
+12.1. Voluntary Release.
+The Creator's release of the Work is voluntary.
+12.2. No Required Maintenance.
+The Creator is not required to create additional works, maintain the Work, release updates, fix defects, provide security patches, accept commissions, fulfill requests, or provide technical support.
+12.3. No Required Recipient Contribution.
+Recipients are not required to contribute code, money, documentation, testing, labor, feedback, publicity, or any other resource to the Creator.
+12.4. Independent Contributors.
+Contributors retain ownership of their original contributions unless they separately agree otherwise.
+A contributor's submission does not automatically transfer ownership of their contribution to the Creator.
+12.5. Third-Party Contributions.
+Rights in contributions made by other people depend on the permissions those contributors actually grant. The Creator cannot grant rights in material they do not own or control.
+13. NO WARRANTY
+THE WORK IS PROVIDED "AS IS" AND, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+THE CREATOR DISCLAIMS WARRANTIES INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, SECURITY, AVAILABILITY, AND FREEDOM FROM DEFECTS.
+THE CREATOR DOES NOT GUARANTEE THAT THE WORK WILL OPERATE CORRECTLY, REMAIN AVAILABLE, MEET A PARTICULAR REQUIREMENT, OR BE SUITABLE FOR ANY PARTICULAR USE.
+NOTHING IN THIS SECTION EXCLUDES OR LIMITS A WARRANTY OR RIGHT THAT APPLICABLE LAW DOES NOT PERMIT TO BE EXCLUDED OR LIMITED.
+14. LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE CREATOR SHALL NOT BE LIABLE FOR CLAIMS, DAMAGES, LOSSES, OR OTHER LIABILITY ARISING FROM THE WORK OR FROM ITS USE, INABILITY TO USE, MODIFICATION, DISTRIBUTION, OR OTHER DEALINGS.
+THIS LIMITATION APPLIES TO THE EXTENT PERMITTED BY LAW, INCLUDING WHERE LIABILITY IS ASSERTED UNDER CONTRACT, TORT, OR ANOTHER LEGAL THEORY.
+NOTHING IN THIS SECTION EXCLUDES OR LIMITS LIABILITY THAT APPLICABLE LAW DOES NOT PERMIT TO BE EXCLUDED OR LIMITED.
+15. NO REVOCATION
+15.1. Irrevocability.
+The public-domain dedication and fallback permissions are intended to be irrevocable to the fullest extent permitted by applicable law.
+15.2. No Retroactive Withdrawal.
+The Creator will not attempt to withdraw or retroactively restrict rights already granted under EWSW-2.0.
+15.3. Future Versions.
+The Creator may release future versions of the Work under different terms.
+A new release under different terms does not cancel or narrow rights already granted to existing Recipients under EWSW-2.0.
+15.4. Independent Copies.
+Recipients may continue exercising their rights in existing copies without depending on the Creator's continued participation.
+16. RIGHTS THAT CANNOT BE WAIVED
+Nothing in EWSW-2.0 is intended to waive, transfer, or license any right that applicable law prohibits the Creator from waiving, transferring, or licensing.
+Where applicable law permits certain rights to be waived only through a separate, express, or jurisdiction-specific instrument, this license does not substitute for that instrument.
+The public-domain dedication and fallback license shall be interpreted to achieve the greatest lawful degree of freedom consistent with the Creator's intentions.
+17. THIRD-PARTY MATERIAL AND LIMITATIONS
+17.1. No Unauthorized Grants.
+EWSW-2.0 grants only those rights that the Creator owns or is authorized to grant.
+17.2. Third-Party Components.
+Dependencies, libraries, artwork, documentation, fonts, trademarks, datasets, and other third-party materials incorporated into or distributed with the Work may be subject to separate terms.
+17.3. Independent Compliance.
+Recipients remain responsible for identifying and complying with legal obligations that apply independently of the rights granted by this license.
+17.4. No Additional Restrictions from the Creator.
+The Creator does not impose additional contractual conditions on the exercise of rights expressly granted under EWSW-2.0.
+18. PHILOSOPHY
+EWSW-2.0 is inspired by the philosophy of Eclipses Wonder of Software and Work.
+Its principles are expressions of the Creator's beliefs and motivations, not mandatory rules governing Recipients.
+Recipients are free to disagree with EWSW, reject its philosophy, make money from the Work, withhold their modifications, discontinue their projects, or use the Work for purposes the Creator would not personally support, subject to applicable law and rights outside the scope of this license.
+The Creator's rejection of reward does not prohibit voluntary rewards.
+The Creator's preference for free and voluntary work does not require anyone else to work for free.
+The Creator's commitment to people over profits does not prohibit recipients from earning profits.
+The Creator's willingness to give does not create an obligation for anyone else to give.
+The philosophy belongs to the Creator.
+The freedoms belong to the Recipient.
+19. INTERPRETATION AND SEVERABILITY
+19.1. Freedom-Favoring Interpretation.
+EWSW-2.0 shall be interpreted in favor of the greatest practical freedom for Recipients that applicable law permits.
+19.2. Severability.
+If a provision is determined to be invalid or unenforceable, the remaining provisions shall remain effective to the maximum extent permitted by law.
+19.3. Limited Invalidity.
+Any invalid or unenforceable provision shall be limited or interpreted only to the extent necessary to address the legal defect, where applicable law permits such an approach.
+19.4. No Implied Obligations.
+No obligation to pay, attribute, contribute, publish modifications, maintain the Work, or provide support shall be implied merely from receiving or using the Work.
+20. FINAL STATEMENT
+The Creator releases this Work under EWSW-2.0 because they choose to give it to others.
+Use it.
+Copy it.
+Study it.
+Change it.
+Port it.
+Manufacture it.
+Share it.
+Archive it.
+Build upon it.
+Sell it if you want.
+Give it away if you want.
+Keep your modifications private if you want.
+Make something better.
+Make something different.
+Use it for purposes the Creator never imagined.
+You do not owe the Creator money.
+You do not owe the Creator recognition.
+You do not owe the Creator labor.
+You do not owe the Creator loyalty.
+You do not owe the Creator a continuation of their project.
+You do not owe the Creator anything merely because they gave you the Work.
+The Creator gave it because they wanted to.
+That is the point.
 ============================================================
-
 LOVE OVER PROFIT FIRST.
 FREEDOM WITHOUT OBLIGATION.
 
@@ -48,13 +264,4 @@ X BDN LV
 
 Signature of Software Developer:
 X BDN LV
-
 ============================================================
-
-NOTICE
-
-This file contains a summary of EWSW-2.0, not the complete legal
-terms. If there is any inconsistency between this summary and the
-complete license, consult the complete license text. This notice
-does not expand or restrict the permissions granted by the complete
-license.
