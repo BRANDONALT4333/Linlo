@@ -1,0 +1,326 @@
+#!/usr/bin/env bash
+
+LINLO_VERSION="1.1"
+LINLO_NAME="Linlo"
+
+detect_os() {
+    OS_KERNEL="$(uname -s 2>/dev/null || printf 'Unknown')"
+    OS_NAME="Unknown"
+    OS_DISPLAY="Unknown"
+
+    case "$OS_KERNEL" in
+        Linux)
+            OS_NAME="Linux"
+            if [[ -r /etc/os-release ]]; then
+                OS_DISPLAY="$(
+                    . /etc/os-release
+                    printf '%s' "${PRETTY_NAME:-Linux}"
+                )"
+            else
+                OS_DISPLAY="Linux"
+            fi
+            ;;
+        FreeBSD)
+            OS_NAME="FreeBSD"
+            OS_DISPLAY="FreeBSD"
+            ;;
+        Darwin)
+            OS_NAME="macOS"
+            OS_DISPLAY="macOS"
+            ;;
+        *)
+            OS_NAME="$OS_KERNEL"
+            OS_DISPLAY="$OS_KERNEL"
+            ;;
+    esac
+}
+
+filesystem_text() {
+    case "$OS_NAME" in
+        Linux)
+            if [[ "$OS_DISPLAY" == "Linux" ]]; then
+                printf 'Linlo searches your entire Linux filesystem.\n'
+            else
+                printf 'Linlo searches your entire %s filesystem.\n' "$OS_DISPLAY"
+            fi
+            ;;
+        FreeBSD)
+            printf 'Linlo searches your entire FreeBSD filesystem.\n'
+            ;;
+        macOS)
+            printf 'Linlo searches your macOS filesystem.\n'
+            ;;
+        *)
+            printf 'Linlo searches your filesystem on %s.\n' "$OS_DISPLAY"
+            ;;
+    esac
+}
+
+show_version() {
+    printf '%s %s\n' "$LINLO_NAME" "$LINLO_VERSION"
+}
+
+show_os() {
+    printf 'Linlo system information\n'
+    printf '%s\n' '========================'
+    printf 'Operating system: %s\n' "$OS_DISPLAY"
+    printf 'Kernel: %s\n' "$OS_KERNEL"
+
+    if command -v find >/dev/null 2>&1; then
+        printf 'Dependency: find is available.\n'
+    else
+        printf 'Dependency: find is missing.\n'
+        printf 'Install the findutils package for your system.\n'
+    fi
+}
+
+show_license() {
+    clear
+    cat <<'EOF'
+ECLIPSES WONDER OF SOFTWARE AND WORK LICENSE 2.0
+
+Copyright (c) 2026, EclipseGMD (MonroeKernelWorks)
+
+This work is released under the Eclipses Wonder of Software
+and Work License 2.0 (EWSW-2.0).
+
+PREAMBLE
+
+EWSW is founded upon these principles:
+
+- People Over Profits
+- Love and Dedication Over Profit-Driven Work
+- Rejection of Reward
+- Doing It for Free and Voluntary
+- Freedom Over Restriction
+- Preservation Over Abandonment
+- Access Without Obligation
+
+EWSW-2.0 aims to grant recipients the greatest practical
+freedom legally possible. It dedicates the Work to the public
+domain to the fullest extent permitted by law, with an
+irrevocable fallback license for rights that cannot be
+relinquished.
+
+GRANT OF FREEDOMS
+
+To the fullest extent permitted by applicable law, recipients
+may use, study, copy, modify, adapt, translate, combine,
+publish, distribute, sell, rebrand, port, archive, and create
+derivative works from the Work.
+
+Commercial and non-commercial use is permitted.
+
+No payment, royalty, attribution, publicity, registration,
+source disclosure, or contribution is required.
+
+Recipients may choose different licensing terms for their own
+modifications and may keep modifications private.
+
+The Creator does not promise continued development, updates,
+maintenance, or technical support.
+
+THIRD-PARTY RIGHTS
+
+This license grants only rights the Creator owns or is
+authorized to grant. Third-party material may have separate
+terms.
+
+NO WARRANTY
+
+The Work is provided "AS IS", to the maximum extent permitted
+by applicable law, without warranties of any kind.
+
+LIMITATION OF LIABILITY
+
+To the maximum extent permitted by applicable law, the Creator
+is not liable for claims or damages arising from the Work.
+
+PUBLIC-DOMAIN DEDICATION AND FALLBACK LICENSE
+
+The dedication and fallback permissions are intended to be
+worldwide, perpetual, irrevocable, and royalty-free to the
+fullest extent permitted by law.
+
+For the complete EWSW-2.0 legal text, consult the full license
+distributed with the project.
+
+The complete license takes precedence over this summary.
+
+LOVE OVER PROFIT FIRST.
+FREEDOM WITHOUT OBLIGATION.
+
+Thanks to the friends and inspirations who motivated this
+project:
+
+Adam, Azul, Cuffy, Butterboy, Jesper, Avelyn, DeadeMMC,
+MittensEAS, actionjaxon23, Anthoney.
+
+I appreciate you ALL! <3
+
+Dependencies: find
+EOF
+    printf '\n'
+    read -rp "Press ENTER to return to the main menu."
+}
+
+perform_search() {
+    local search_name="$1"
+    local search_mode="$2"
+    local pattern
+    local found=0
+    local result
+
+    if ! command -v find >/dev/null 2>&1; then
+        printf "Linlo requires the 'find' command.\n" >&2
+        return 1
+    fi
+
+    case "$search_mode" in
+        exact)
+            pattern="$search_name"
+            ;;
+        *)
+            pattern="*$search_name*"
+            ;;
+    esac
+
+    clear
+    printf '%s\n' 'LINLO — SEARCH'
+    printf '%s\n' '=============='
+    filesystem_text
+    printf 'Search: %s\n\n' "$search_name"
+
+    while IFS= read -r result; do
+        printf '%s\n' "$result"
+        found=$((found + 1))
+    done < <(
+        case "$search_mode" in
+            directories)
+                find / -type d -iname "$pattern" 2>/dev/null
+                ;;
+            files)
+                find / -type f -iname "$pattern" 2>/dev/null
+                ;;
+            *)
+                find / -iname "$pattern" 2>/dev/null
+                ;;
+        esac
+    )
+
+    printf '\n========================\n'
+    printf 'Search complete: %s result(s).\n' "$found"
+    read -rp "Press ENTER to continue."
+}
+
+search_menu() {
+    local choice
+    local search_name
+
+    clear
+    printf '%s\n' 'What would you like to find?'
+    printf '\n'
+    printf '%s\n' 'Press ENTER. Search for everything'
+    printf '%s\n' '1. Search by name'
+    printf '%s\n' '2. Search for an exact name'
+    printf '%s\n' '3. Search directories only'
+    printf '%s\n' '4. Search files only'
+    printf '%s\n' '5. Return to menu'
+    printf '\n'
+
+    read -rp 'Select an option: ' choice
+
+    case "$choice" in
+        ""|1|2|3|4)
+            read -rp 'What would you like to find? ' search_name
+            [[ -z "$search_name" ]] && return
+
+            case "$choice" in
+                2) perform_search "$search_name" exact ;;
+                3) perform_search "$search_name" directories ;;
+                4) perform_search "$search_name" files ;;
+                *) perform_search "$search_name" everything ;;
+            esac
+            ;;
+        5)
+            return
+            ;;
+        *)
+            printf 'Invalid option.\n'
+            sleep 1
+            ;;
+    esac
+}
+
+main_menu() {
+    local choice
+
+    while true; do
+        clear
+        printf '%s\n' 'LINLO — A SIMPLE FILE FINDER'
+        printf '%s\n' '============================'
+        filesystem_text
+        printf '\n'
+        printf '%s\n' '1. Find something'
+        printf '%s\n' '2. License and credits'
+        printf '%s\n' '3. System information'
+        printf '%s\n' '4. Exit'
+        printf '\n'
+
+        read -rp 'Select an option: ' choice
+
+        case "$choice" in
+            1) search_menu ;;
+            2) show_license ;;
+            3)
+                clear
+                show_os
+                read -rp 'Press ENTER to return to the main menu.'
+                ;;
+            4)
+                printf 'Thank you for using Linlo!\n'
+                exit 0
+                ;;
+            *)
+                printf 'Invalid option.\n'
+                sleep 1
+                ;;
+        esac
+    done
+}
+
+detect_os
+
+case "${1:-}" in
+    --version|-v)
+        show_version
+        exit 0
+        ;;
+    --os)
+        show_os
+        exit 0
+        ;;
+    --help|-h)
+        printf 'Linlo %s\n\n' "$LINLO_VERSION"
+        printf '%s\n' \
+            'Usage:' \
+            '  linlo' \
+            '  linlo <search term>' \
+            '  linlo --version' \
+            '  linlo --os' \
+            '  linlo --help'
+        exit 0
+        ;;
+esac
+
+if ! command -v find >/dev/null 2>&1; then
+    printf "Linlo requires the 'find' command.\n" >&2
+    exit 1
+fi
+
+if [[ $# -gt 0 ]]; then
+    perform_search "$*" everything
+    exit $?
+fi
+
+main_menu
