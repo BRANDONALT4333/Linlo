@@ -1,7 +1,7 @@
 
 name: linlo
 base: core24
-version: '1.0.0'
+version: '1.1'
 summary: Terminal filesystem search utility
 description: |
   Linlo is a free and open-source Bash filesystem
@@ -12,7 +12,7 @@ confinement: strict
 
 apps:
   linlo:
-    command: bin/linlo
+    command: usr/bin/linlo
     plugs:
       - home
       - removable-media
@@ -20,8 +20,10 @@ apps:
 parts:
   linlo:
     plugin: dump
-    source: ..
+    source: .
+    source-type: local
     organize:
-      linlo: bin/linlo
+      linlo: usr/bin/linlo
     stage-packages:
+      - bash
       - findutils
