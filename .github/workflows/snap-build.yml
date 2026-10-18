@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   build:
-    name: Build Snap package
+    name: Build and Publish Linlo Snap
     runs-on: ubuntu-24.04
 
     steps:
@@ -37,3 +37,12 @@ jobs:
           path: ${{ steps.snapcraft.outputs.snap }}
           if-no-files-found: error
           retention-days: 7
+
+      - name: Publish to Snap Store
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: snapcore/action-publish@v1
+        env:
+          SNAPCRAFT_STORE_CREDENTIALS: ${{ secrets.STORE_LOGIN }}
+        with:
+          snap: ${{ steps.snapcraft.outputs.snap }}
+          release: edge
