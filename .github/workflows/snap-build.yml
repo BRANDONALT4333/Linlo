@@ -1,0 +1,39 @@
+
+name: Build Linlo Snap
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'linlo'
+      - 'snap/**'
+      - '.github/workflows/snap-build.yml'
+  pull_request:
+    paths:
+      - 'linlo'
+      - 'snap/**'
+      - '.github/workflows/snap-build.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build Snap package
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Check out Linlo
+        uses: actions/checkout@v4
+
+      - name: Build Snap
+        id: snapcraft
+        uses: snapcore/action-build@v1
+
+      - name: Upload Snap artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: linlo-snap
+          path: ${{ steps.snapcraft.outputs.snap }}
+          if-no-files-found: error
+          retention-days: 7
