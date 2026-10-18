@@ -1,0 +1,27 @@
+
+name: linlo
+base: core24
+version: '1.0.0'
+summary: Terminal filesystem search utility
+description: |
+  Linlo is a free and open-source Bash filesystem
+  search utility for Linux.
+
+grade: devel
+confinement: strict
+
+apps:
+  linlo:
+    command: bin/linlo
+    plugs:
+      - home
+      - removable-media
+
+parts:
+  linlo:
+    plugin: dump
+    source: ..
+    organize:
+      linlo: bin/linlo
+    stage-packages:
+      - findutils
